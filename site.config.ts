@@ -1,18 +1,27 @@
 import type { SiteConfig } from "./site.config.types";
 
-// Default config. Committed to the template so a fresh clone builds cleanly
-// with zero changes. The automation framework overwrites this file on seed;
-// Claude Code updates it during design iteration (respect the types, don't
-// touch _meta).
+// Seeded by the ctrl-alt-elite automation framework from the client's brief.
+// Claude Code may iterate on this file during the design phase, but must
+// preserve the _meta block verbatim.
 const config: SiteConfig = {
-  name: "Your Business",
-  tagline: "Replace this tagline with a short description of what you do.",
-  primaryGoal: "basic_info",
-  pages: ["home", "about", "services", "contact"],
-  theme: {
-    accent: "#3b82f6",
+  "name": "Springvale Weatherproofing",
+  "tagline": "A short description of what we do.",
+  "primaryGoal": "basic_info",
+  "pages": [
+    "home",
+    "about",
+    "contact"
+  ],
+  "theme": {
+    "accent": "#3b82f6"
   },
-  contact: {},
+  "contact": {},
+  "_meta": {
+    "project_id": "8cde49f9-301e-486b-9940-219408025215",
+    "package_slug": "standard",
+    "seeded_at": "2026-04-17T23:46:44.754Z",
+    "portal_url": "https://ctrl-alt-elite.uk/portal/projects/8cde49f9-301e-486b-9940-219408025215"
+  }
 };
 
 export default config;

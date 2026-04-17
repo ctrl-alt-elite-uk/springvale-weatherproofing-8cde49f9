@@ -303,3 +303,23 @@ Some clients are quoted on two tiers. The convention:
 Both branches deploy automatically: `main` is production, `basic-tier` is a Vercel preview URL. You can send a client both URLs side by side so they can compare and pick. When they choose, the chosen branch becomes the live one.
 
 You generally don't need to maintain `basic-tier` after the comparison - it's a sales artefact. If a client picks the basic tier, delete `main`'s richer pages and bring `basic-tier` over (or just rebase main onto it).
+
+
+## This client
+
+- **Package**: standard
+- **Business**: Springvale Weatherproofing
+- **Primary goal**: basic_info
+- **Pages**: home, about, contact
+- **Accent colour**: #3b82f6
+- **Logo**: Client has no logo. Use the wordmark fallback (business name in display font).
+- **Portal**: https://ctrl-alt-elite.uk/portal/projects/8cde49f9-301e-486b-9940-219408025215
+- **Project id**: 8cde49f9-301e-486b-9940-219408025215
+
+### Inspiration links (from brief)
+
+- (none provided)
+
+### Notes for iteration
+
+Stay within the constraints at the top of this file. Any question about the brief goes back through the portal - do not guess.
