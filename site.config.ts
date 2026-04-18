@@ -5,7 +5,7 @@ import type { SiteConfig } from "./site.config.types";
 // preserve the _meta block verbatim.
 const config: SiteConfig = {
   "name": "Springvale Weatherproofing",
-  "tagline": "A short description of what we do.",
+  "tagline": "A complete roofing service in South Wales - new roofs, replacements, emergency repairs and day-to-day maintenance.",
   "primaryGoal": "basic_info",
   "pages": [
     "home",
@@ -15,7 +15,15 @@ const config: SiteConfig = {
   "theme": {
     "accent": "#3b82f6"
   },
-  "contact": {},
+  "contact": {
+    "phone": "01633 213433",
+    "address": "5 Broad Street, Newport, South Wales, NP20 2DQ"
+  },
+  "business": {
+    "legalName": "Springvale Weatherproofing Limited",
+    "areaServed": "South Wales",
+    "schemaType": "HomeAndConstructionBusiness"
+  },
   "_meta": {
     "project_id": "8cde49f9-301e-486b-9940-219408025215",
     "package_slug": "standard",

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700;800&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "surface-dim": "#d9dadc",
+                    "tertiary-container": "#401600",
+                    "tertiary-fixed": "#ffdbcb",
+                    "primary-container": "#002347",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#000d21",
+                    "inverse-on-surface": "#f0f0f3",
+                    "on-primary-fixed-variant": "#2c486d",
+                    "on-secondary-container": "#55656f",
+                    "surface-bright": "#f9f9fb",
+                    "on-tertiary-fixed": "#341100",
+                    "tertiary": "#1d0600",
+                    "outline": "#74777f",
+                    "tertiary-fixed-dim": "#ffb692",
+                    "on-error-container": "#93000a",
+                    "background": "#f9f9fb",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1a1c1e",
+                    "on-tertiary-container": "#e66100",
+                    "secondary-fixed-dim": "#b9c9d5",
+                    "primary-fixed-dim": "#adc8f5",
+                    "on-secondary-fixed-variant": "#3a4953",
+                    "primary-fixed": "#d4e3ff",
+                    "on-surface": "#1a1c1e",
+                    "on-primary-container": "#718bb5",
+                    "inverse-primary": "#adc8f5",
+                    "on-primary": "#ffffff",
+                    "secondary-fixed": "#d5e5f1",
+                    "surface-container-high": "#e8e8ea",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f3f3f6",
+                    "on-surface-variant": "#43474e",
+                    "secondary": "#51606b",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f9f9fb",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#0e1d26",
+                    "inverse-surface": "#2f3133",
+                    "on-tertiary-fixed-variant": "#7a3000",
+                    "on-primary-fixed": "#001c3a",
+                    "surface-tint": "#455f87",
+                    "outline-variant": "#c4c6cf",
+                    "surface-variant": "#e2e2e5",
+                    "surface-container-highest": "#e2e2e5",
+                    "secondary-container": "#d2e2ee",
+                    "surface-container": "#edeef0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-header {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-on-tertiary-container selection:text-white">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-[#000d21]/80 backdrop-blur-xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:shadow-none">
+<div class="flex justify-between items-center px-12 h-20 max-w-[1920px] mx-auto">
+<div class="text-xl font-black tracking-tighter text-[#000d21] dark:text-white font-headline">
+                Springvale Weatherproofing
+            </div>
+<div class="hidden md:flex gap-10 items-center">
+<a class="font-headline font-bold uppercase tracking-widest text-[11px] text-[#e66100] border-b-2 border-[#e66100] pb-1" href="#">Services</a>
+<a class="font-headline font-bold uppercase tracking-widest text-[11px] text-slate-600 dark:text-slate-400 hover:text-[#002347] transition-colors" href="#">Projects</a>
+<a class="font-headline font-bold uppercase tracking-widest text-[11px] text-slate-600 dark:text-slate-400 hover:text-[#002347] transition-colors" href="#">Compliance</a>
+<a class="font-headline font-bold uppercase tracking-widest text-[11px] text-slate-600 dark:text-slate-400 hover:text-[#002347] transition-colors" href="#">Company</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-headline font-bold uppercase tracking-widest text-[10px] hover:opacity-80 transition-all active:scale-95">Request Quote</button>
+<button class="hidden lg:block border border-outline-variant/30 text-primary px-6 py-2.5 rounded-md font-headline font-bold uppercase tracking-widest text-[10px] hover:bg-surface-container-low transition-all">Emergency Repair</button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center overflow-hidden bg-primary-container">
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent z-10"></div>
+<img class="absolute inset-0 w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-1000" data-alt="Modern architectural roof detail with clean sharp lines against a blue sky, high contrast industrial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANUKUctRB3Jj1VYxT-c2Vq0Jnd5QSOHSpFw-D552mxTFYNbg1_YuNldb1QIEtw4T3qcVs00v8e91NM9Ktgtn9BnYHsO_U-ZWzqKxpiugh73r7PefUL-dnFj8y10SJsdTzUVroaSBI_egFTKkp4uOxgj6FiUGwNlTRHj3S7Tu9DNVo-5gcJtITiVIu6pFhZpOH1S1vemLZS20vcgWYKRHqCAkrHpa99ieHxqBCo4bYhMxI8tUh-9B96Fq_SJt4jwsiXD2Xiu0S-A6Y"/>
+<div class="relative z-20 px-12 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div>
+<span class="inline-block px-4 py-1 bg-on-tertiary-container text-white font-headline font-extrabold text-[10px] tracking-[0.3em] uppercase mb-6">Expertise &amp; Resilience</span>
+<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-white leading-tight tracking-tighter mb-8">
+                        Architectural <br/>Protection.
+                    </h1>
+<p class="text-on-primary-container text-lg leading-relaxed max-w-md">
+                        Precision-engineered weatherproofing solutions for industrial and commercial structures. Delivering structural permanence through advanced material science.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Services Section: Built up Felt -->
+<section class="py-32 px-12 max-w-[1920px] mx-auto bg-surface">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<div class="flex items-center gap-4 mb-8">
+<span class="h-[2px] w-12 bg-on-tertiary-container"></span>
+<span class="font-headline font-bold uppercase tracking-widest text-xs text-on-tertiary-container">Structural Integrity</span>
+</div>
+<h2 class="font-headline text-4xl lg:text-5xl font-black text-primary mb-8 tracking-tighter">Built up Felt <br/>Roofing Systems</h2>
+<p class="text-secondary text-lg leading-relaxed mb-8">
+                        Our high-performance multi-layer felt systems provide a robust, monolithic barrier against the elements. Utilizing reinforced bitumen membranes, we create high-tensile strength surfaces that accommodate structural movement while maintaining absolute water-tightness.
+                    </p>
+<div class="bg-surface-container-low p-6 border-l-4 border-on-tertiary-container">
+<p class="font-headline font-bold text-primary mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="verified">verified</span>
+                            Insurance-Backed Warranty
+                        </p>
+<p class="text-sm text-secondary">Fully guaranteed for up to 25 years with comprehensive structural protection cover.</p>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<div class="relative aspect-video overflow-hidden rounded-xl shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Detailed view of professional industrial felt roofing application with precision layers and dark asphalt textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqZf9ArKSbSbyC56n9W9Er5yucYZTwdlyqg3RzHaohOhgCvgQmUNLKDXR-1aVv1nkU2RlJdyxpsoDFbcsBvk0e6xhET1STgnjUI-mv2ZUEADMpS8KB9uUw4CMO8IeZpQUXjI_SDpgSlb2_cQaC9PsX2VrZBLnWLO_dAZnRLdn5vdQ8DqZ2Cg5gdSKsJmeOe2wy949jvTnmCvEVfUCJ8S2nt_honqbhxBzrjy0AHEyvWaz0TSW2ZTgiLFYxssvai3kP9LGHHNKvye8"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section: Single Ply (Asymmetric Layout) -->
+<section class="py-32 px-12 bg-surface-container-low">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-48 h-48 bg-primary/5 -z-10"></div>
+<img class="rounded-xl shadow-xl" data-alt="Wide shot of a clean white modern single ply roofing system on a large commercial facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMdPBB60Tz8zSCCIOI8b1_2TorTShGvSHvKuDkLG9Iv8r9CqKN-VxoGLpq3fK5aUJG64y6lgToUqTVbtkoloygOZ599qvMBHg55ZwYSYZJac8dpU5KFxWNizX9ZKDlk0Zn-K5_yfUx1YFi0aE40Ixn8uZe654ZqUqDeU3d0CCdBLkLsAc-mTC8fVUH53xdhJb0fq1P1-F5X-mjgjL9PJkllUaIK9CzQp1VJTXzvKphFKzxLOooltyh2zgwzfyj_VC-Uxd5J5YiQdA"/>
+</div>
+<div class="flex flex-col justify-center">
+<h2 class="font-headline text-4xl lg:text-5xl font-black text-primary mb-8 tracking-tighter">Single Ply Systems</h2>
+<p class="text-secondary text-lg leading-relaxed mb-10">
+                        Modern efficiency meets technical excellence. Our PVC and TPO single ply membranes offer lightweight, flexible, and UV-resistant protection. Ideal for contemporary architectural designs and large-scale commercial developments.
+                    </p>
+<ul class="space-y-6 mb-12">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container mt-1" data-icon="check_circle">check_circle</span>
+<span class="text-primary font-semibold">Thermally efficient and eco-friendly composition.</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container mt-1" data-icon="shield">shield</span>
+<span class="text-primary font-semibold">Comprehensive insurance-backed warranty on all installations.</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Bento Grid Section: Liquid Coating & Cladding -->
+<section class="py-32 px-12 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Liquid Coating (Large Card) -->
+<div class="md:col-span-2 relative group overflow-hidden rounded-xl bg-primary min-h-[500px]">
+<img class="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700" data-alt="Application of liquid coating waterproofing membrane on a complex structural joint, high detail macro photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEZp8qdLWILMwmNYfMfzRM2A_yenwn0OwrR5qaQMpQpkdb3jBYaJ5B_DKuI52ukyoScreYpl3FtMliReGGgSGzfyJGbdeMtjeaTnqTuQ9_FYdpZnvNs7y76w_HMSz3wzQdzqoJl3nhmEdFpdh8SueQjTu3H1f9pssAwr7SdSPG92nWy5QkXfhKOqlq9ZOtV_3iLu1ohJxRdoCISEQty3GY36X1ZqYJnu4Yp67i3kkT7zlesbueIOsDC0wgdOKaiTf8cd6qvSwNwxc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary via-transparent p-12 flex flex-col justify-end">
+<h3 class="font-headline text-3xl font-bold text-white mb-4">Liquid Coating Solutions</h3>
+<p class="text-slate-300 max-w-md mb-6">Seamless, cold-applied membranes for complex geometries. Perfect for zero-heat site requirements.</p>
+<div class="flex items-center gap-3 text-on-tertiary-container font-bold text-sm tracking-widest uppercase">
+<span class="material-symbols-outlined" data-icon="verified_user" data-weight="fill">verified_user</span>
+                                Warranty Included
+                            </div>
+</div>
+</div>
+<!-- Pitched Roofing -->
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm border border-outline-variant/10 flex flex-col">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6" data-icon="architecture">architecture</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Pitched <br/>Roofing</h3>
+<p class="text-secondary text-sm leading-relaxed mb-auto">Traditional craftsmanship with modern materials. Slating and tiling for enduring aesthetic appeal.</p>
+<div class="mt-8 pt-6 border-t border-outline-variant/20">
+<p class="text-[10px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">Full Structural Cover</p>
+</div>
+</div>
+<!-- Profiled Cladding -->
+<div class="md:col-span-3 bg-primary-container p-12 rounded-xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center overflow-hidden relative">
+<div class="absolute top-0 right-0 w-64 h-64 bg-on-tertiary-container/5 rounded-full -mr-32 -mt-32"></div>
+<div>
+<h3 class="font-headline text-3xl font-bold text-white mb-6">Profiled Cladding &amp; Facades</h3>
+<p class="text-on-primary-container text-lg mb-8">Specialist installation of industrial wall cladding and roofing sheets. We provide full building envelope solutions designed for durability and thermal performance.</p>
+<div class="flex flex-wrap gap-4">
+<div class="bg-white/5 backdrop-blur px-4 py-2 rounded flex items-center gap-3">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="gpp_good">gpp_good</span>
+<span class="text-white text-xs font-bold uppercase tracking-wider">Insurance-Backed</span>
+</div>
+<div class="bg-white/5 backdrop-blur px-4 py-2 rounded flex items-center gap-3">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="bolt">bolt</span>
+<span class="text-white text-xs font-bold uppercase tracking-wider">Rapid Install</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<img class="rounded-lg h-48 w-full object-cover shadow-lg" data-alt="Industrial steel cladding texture with sharp vertical lines and rhythmic patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJlyQ1Q1ReP1dwnf2bqn4NHiGOvY_9ACwLKxa92OLF5U85VGvETf1CvxGSh8TV1lXL6da22b3dJ6S4BDdhzanklu9Tj-_iuE9C3WhPDz7EPZNgKiypX2wgnBrBBtnw3V-RX8d9cjMoPmMSLoebNI0n0jswmn5jTDZD8IXfh0gmu5NoxToVGCSoNsuhX1v6anMAIHYVHMYIIGa1FC-TIdNQmSYHRcqbJMFw0FJQhwQGwAWUeyxHQwfOiK9u2PoWBwIQtu3Rs84rMEo"/>
+<img class="rounded-lg h-48 w-full object-cover shadow-lg mt-8" data-alt="Contemporary office building with high-end cladding and architectural details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVutrjQLuFeNca1614BdMGtwfOmisaJtHWLbgcMjPfPpge1nYVNpQ2zY2CThOqWKKLbo9CBmede3d2aRIwcc6Gk4Fguzc2AXxOKjxHD7WpzB0_ibIo8y26DXAjR6aFTd5jWK5TaNjeaW5BIkh2jTGiWt9lxvLL3QV4EYmJv-TaczTN2vMFcxDdMLQ2ABwTrZu-t6TM7EG5blOk1ShbOJVusbS_VX4qHhxxj-Xl-j3olN3dMSWU04Y21Zrpy9pfcTPut7tg4gL-Quo"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-24 px-12 bg-white flex justify-center text-center">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl font-black text-primary mb-6">Ready to secure your structure?</h2>
+<p class="text-secondary mb-10 text-lg">Consult with our technical engineers for a comprehensive site survey and specification report.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-md font-headline font-bold uppercase tracking-[0.2em] text-xs hover:bg-[#e66100] transition-colors">Start Specification</button>
+<button class="bg-surface-container-high text-primary px-10 py-4 rounded-md font-headline font-bold uppercase tracking-[0.2em] text-xs hover:bg-surface-container-highest transition-colors">Download Brochure</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#000d21] dark:bg-[#000814] w-full mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 max-w-[1920px] mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-2xl font-manrope font-black text-white mb-4 block">Springvale Weatherproofing</span>
+<p class="text-slate-400 font-inter text-sm leading-relaxed max-w-xs">
+                    Pioneering architectural protection systems for high-performance buildings across the UK.
+                </p>
+</div>
+<div>
+<h4 class="text-white font-headline font-bold uppercase text-[10px] tracking-widest mb-6">Solutions</h4>
+<div class="flex flex-col gap-4">
+<a class="text-slate-400 hover:text-[#e66100] transition-colors font-inter text-sm" href="#">Liquid Coating</a>
+<a class="text-slate-400 hover:text-[#e66100] transition-colors font-inter text-sm" href="#">Single Ply</a>
+<a class="text-slate-400 hover:text-[#e66100] transition-colors font-inter text-sm" href="#">Pitched Roofing</a>
+<a class="text-slate-400 hover:text-[#e66100] transition-colors font-inter text-sm" href="#">Cladding</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-headline font-bold uppercase text-[10px] tracking-widest mb-6">Company</h4>
+<div class="flex flex-col gap-4">
+<a class="text-slate-400 hover:text-[#e66100] transition-colors font-inter text-sm" href="#">About Us</a>
+<a class="text-slate-400 hover:text-[#e66100] transition-colors font-inter text-sm" href="#">Compliance</a>
+<a class="text-slate-400 hover:text-[#e66100] transition-colors font-inter text-sm" href="#">Case Studies</a>
+<a class="text-slate-400 hover:text-[#e66100] transition-colors font-inter text-sm" href="#">Contact</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-headline font-bold uppercase text-[10px] tracking-widest mb-6">Connect</h4>
+<div class="flex flex-col gap-4">
+<a class="text-slate-400 hover:text-[#e66100] transition-colors font-inter text-sm" href="#">LinkedIn</a>
+<a class="text-slate-400 hover:text-[#e66100] transition-colors font-inter text-sm" href="#">Instagram</a>
+<a class="text-slate-400 hover:text-[#e66100] transition-colors font-inter text-sm" href="#">Privacy Policy</a>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-white/5">
+<p class="text-slate-500 font-inter text-[10px] uppercase tracking-widest text-center">
+                © 2024 Springvale Weatherproofing. Architectural Protection &amp; Structural Permanence. Members of NFRC &amp; Constructionline.
+            </p>
+</div>
+</footer>
+</body></html>

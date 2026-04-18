@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import Script from "next/script";
 import { Header } from "@/components/Header";
 import { Analytics } from "@/components/Analytics";
@@ -15,6 +15,13 @@ import "./globals.css";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  weight: ["500", "700", "800"],
   display: "swap",
 });
 
@@ -52,8 +59,12 @@ export default function RootLayout({
   const jsonLd = localBusinessJsonLd();
 
   return (
-    <html lang="en" className={inter.variable} style={themeStyle}>
-      <body className="flex min-h-screen flex-col">
+    <html
+      lang="en"
+      className={`${inter.variable} ${manrope.variable}`}
+      style={themeStyle}
+    >
+      <body className="flex min-h-screen flex-col bg-surface text-ink selection:bg-signal selection:text-white">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
